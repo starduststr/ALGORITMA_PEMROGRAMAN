@@ -18,7 +18,7 @@ def backPropogation(y1=0, y2=0 ,y3=0):
         Error = nilai_prediksi[x] - nilai_yang_diharapkan[x]
         
         hasil.append(Error)
-    for data in range(len(hasil)):
+    for data in range(len(hasil)):    
         balance -= hasil[data]
     
     t = """Hasil nilai prediksi - nilai yang diharapkan : {}
