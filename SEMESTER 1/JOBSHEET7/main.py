@@ -1,4 +1,7 @@
 def pemanggil(x1=0, x2=0, x3=0):
+    # nilai_prediksi = [10,9,8,9,2,9,3,4]
+    # nilai_yang_diharapkan = [8,9,2,5,4,2,3,4,8]
+    
     nilai_prediksi = x1
     nilai_yang_diharapkan = x2
 
