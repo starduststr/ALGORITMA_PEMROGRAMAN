@@ -13,7 +13,7 @@ def main():
     if len(inputTanggal) < 10 or len(inputTanggal) > 10:
         print('Format tanggal tidak sesuai') 
     else :
-        if int(bulan) > 12 or int(bulan)-1 < 0:
+        if int(bulan)-1 > 12 or int(bulan)-1 < 0:
             bulan = 'Bulan tidak tersedia'
         else :
             bulan = namaBulan[bulan-1]
