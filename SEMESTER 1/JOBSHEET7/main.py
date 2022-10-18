@@ -17,15 +17,15 @@ def backPropogation(y1=0, y2=0 ,y3=0):
     
         Error = nilai_prediksi[x] - nilai_yang_diharapkan[x]
         
-        for data in range(len(hasil)):
-            balance += hasil[data]
         hasil.append(Error)
+    for data in range(len(hasil)):
+        balance -= hasil[data]
     
-#     t = """Hasil nilai prediksi - nilai yang diharapkan : {}
-# Balance : {}""".format(hasil, balance)
+    t = """Hasil nilai prediksi - nilai yang diharapkan : {}
+Balance : {}""".format(hasil, balance)
 
     fileOut = open('output.txt', 'w')
-    fileOut.write(str(balance))
+    fileOut.write(str(t))
     return balance
 
 backPropogation()

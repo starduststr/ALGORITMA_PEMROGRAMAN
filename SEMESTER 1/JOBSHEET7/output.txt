@@ -1,1 +1,2 @@
--47
+Hasil nilai prediksi - nilai yang diharapkan : [0, -1, -1, -1, -4, -6, -8, -3]
+Balance : 24
