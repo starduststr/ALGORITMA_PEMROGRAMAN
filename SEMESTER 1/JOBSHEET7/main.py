@@ -1,23 +1,22 @@
-def backPropogation(y1, y2 ,y3):
+def pemanggil(x1=0, x2=0, x3=0):
+    nilai_prediksi = [10,9,8,9,2,9,3,4]
+    nilai_yang_diharapkan = [8,9,2,5,4,2,3,4,8]
+
+    return nilai_prediksi, nilai_yang_diharapkan
+
+def backPropogation(y1=0, y2=0 ,y3=0):
+    nilai_prediksi, nilai_yang_diharapkan = pemanggil()
+
     hasil = []
 
-    for x in range(len(y1)):
-        nilai_prediksi = y1[x]
-        nilai_yang_diharapkan = y2[x]
-
-        Error = nilai_prediksi - nilai_yang_diharapkan
+    for x in range(len(nilai_prediksi)):
+    
+        Error = nilai_prediksi[x] - nilai_yang_diharapkan[x]
 
         hasil.append(Error)
-        
-
+    
+    fileOut = open('output.txt', 'w')
+    fileOut.write(str(hasil))
     return hasil
 
-
-def pemanggil(x1,x2,x3):
-    
-    return backPropogation(x1, x2, 0)
-
-nilai_prediksi = [10,9,8,9,2,9,3,4]
-nilai_yang_diharapkan = [8,9,2,5,4,2,3,4,8]
-
-print(pemanggil(nilai_prediksi, nilai_yang_diharapkan, 0))
+backPropogation()
