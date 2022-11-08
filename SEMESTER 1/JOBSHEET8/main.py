@@ -1,4 +1,4 @@
-def nilai(data):
+def MenentukanNilai(data):
     nilai = float(data)
     if nilai >= 80.1:
         return "A"
@@ -20,7 +20,9 @@ def nilai(data):
 def main():
     inputNilai = input("Masukan nilai : ")
 
-    print("NILAI ANDA ADALAH : ",nilai(inputNilai))
+    print("NILAI ANDA ADALAH : ",MenentukanNilai(inputNilai))
 
-
-main()
+try:
+    main()
+except Exception as error:
+    print("Terjadi kesalahan \n", error)
