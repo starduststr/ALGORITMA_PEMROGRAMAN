@@ -22,26 +22,27 @@ def main():
       count+=1
     print('0. Keluar')
 
-pilih_menu = eval(input('\nPilihan anda : '))
+    pilih_menu = eval(input('\nPilihan anda : '))
     data_pilih.append(menu[pilih_menu-1])
     
     print('\nMenu yang anda pilih adalah : {}'.format(menu[pilih_menu-1]))
 
     repeat = input('\nApakah anda mau memilih pesanan lagi (Y/N) : ')
 
-"""menampilkan menu pilihan kemudian simpan di var data_pilih"""
+    """menampilkan menu pilihan kemudian simpan di var data_pilih"""
 
-if repeat == 'n' or repeat == 'N' or repeat == 0:
-          print('\n\nPesanan anda : ')
+    if repeat == 'n' or repeat == 'N' or repeat == 0:
+        print('\n\nPesanan anda : ')
 
-          for hasil in data_pilih:
-            print(hasil)
-          
-          print('\nTerima kasih atas pesanannya.')
+        for hasil in data_pilih:
+          print(hasil)
+              
+        print('\nTerima kasih atas pesanannya.')
 
-          break
+        break
 
-"""menampilkan data yang dipesan"""
+    # """menampilkan data yang dipesan"""
+
 
 try:
   main()
