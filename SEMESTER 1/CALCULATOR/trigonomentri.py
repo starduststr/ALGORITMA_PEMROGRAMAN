@@ -22,7 +22,7 @@ class Main:
                 print("Oops! nilai yang dimasukan salah")
                 print("Contoh : 1,2")
         elif option < 0  and option <= len(menu):
-            x = eval(input("Enter the x value : "))
+            x = eval(input("Masukan nilai x : "))
             
             try :
                 if option == 1:
