@@ -60,7 +60,7 @@ class Main:
                 print(error)
         
         elif option == 0 :
-            def h():
+            while True:
                 i = 1
                 print("-------------------HELP-------------------")
                 for data in menu:
@@ -75,9 +75,9 @@ class Main:
                     print("Oppss! Pilihan tidak ada")
                 
                 q = input("\nAkhiri sesi ini? (y/n) : ")
-                if q == "n" or q == "N":
-                    h()
-            h()
+                
+                if q == "y" or q == "Y":
+                    break
             
         else :
             print("Oopss! nilai yang anda masukan salah")
