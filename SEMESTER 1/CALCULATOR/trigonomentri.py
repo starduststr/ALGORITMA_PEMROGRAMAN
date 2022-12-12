@@ -21,36 +21,39 @@ class Main:
             except:
                 print("Oops! nilai yang dimasukan salah")
                 print("Contoh : 1,2")
-        elif option < 0 :
+        elif option < 0  and option <= len(menu):
             x = eval(input("Enter the x value : "))
             
             try :
                 if option == 1:
-                    print("\n{} = {}".format(menu[option-1],Calc.acos(x)))
+                    hasil = Calc.acos(x)
                     
                 elif option == 2:
-                    print("\n{} = {}".format(menu[option-1],Calc.asin(x)))
+                    hasil = Calc.asin(x)
                     
                 elif option == 3:
-                    print("\n{} = {}".format(menu[option-1],Calc.atan(x)))
+                    hasil = Calc.atan(x)
                     
                 elif option == 5:
-                    print("\n{} = {}".format(menu[option-1],Calc.cos(x)))
+                    hasil = Calc.cos(x)
 
                 elif option == 6:
-                    print("\n{} = {}".format(menu[option-1],Calc.hypot(x)))
+                    hasil = Calc.hypot(x)
 
                 elif option == 7:
-                    print("\n{} = {}".format(menu[option-1],Calc.sin(x)))
+                    hasil = Calc.sin(x)
 
                 elif option == 8:
-                    print("\n{} = {}".format(menu[option-1],Calc.tan(x)))
+                    hasil = Calc.tan(x)
 
                 elif option == 9:
-                    print("\n{} = {}".format(menu[option-1],Calc.degress(x)))
+                    hasil = Calc.degress(x)
 
                 elif option == 9:
-                    print("\n{} = {}".format(menu[option-1],Calc.radians(x)))
+                    hasil = Calc.radians(x)
+                    
+                print("\n{} = {}".format(menu[option-1],hasil))
+
                     
             except Exception as error:
                 print("Opps! Nilai yang dimasukan salah")
