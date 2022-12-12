@@ -75,7 +75,7 @@ class Main:
                     print("Oppss! Pilihan tidak ada")
                 
                 q = input("\nAkhiri sesi ini? (y/n) : ")
-                if q == "n" or 1 == "N":
+                if q == "n" or q == "N":
                     h()
             h()
             
