@@ -21,7 +21,7 @@ class Main:
             except:
                 print("Oops! nilai yang dimasukan salah")
                 print("Contoh : 1,2")
-        elif option < 0  and option <= len(menu):
+        elif option != 0:
             x = eval(input("Masukan nilai x : "))
             
             try :
@@ -80,7 +80,7 @@ class Main:
                     break
             
         else :
-            print("Oopss! nilai yang anda masukan salah")
+            print("Oopss! nilai yang anda masukan salah", option)
         
     
     
