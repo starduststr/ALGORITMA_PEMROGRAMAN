@@ -133,9 +133,9 @@ class Calc:
             'atan(x)' : ' Fungsi atan(x) digunakan untuk menampilkan nilai arc tangen dari sebuah bilangan x. Dimana x adalah bilangan antara -1 sampai dengan 1.',
             'atan2(y,x)' : 'Fungsi atan2(y,x) akan menghasilkan nilai atan y/x dalam radian.',
             'cos(x)' : 'Fungsi cos(x) digunakan untuk menampilkan nilai cosinus dari sebuah bilangan x. Dimana hasilnya adalah antara -1 sampai dengan 1.',
-            'hypot(x)' : 'Fungsi hypot(x,y) akan menghasil bentuk Ecludean, akar dari x*x + y*y.',
+            'hypot(x)' : 'Fungsi hypot(x,y) akan menghasil bentuk Ecludean, akar dari x*x + y*y.',
             'sin(x)' : ' Fungsi sin(x) digunakan untuk menampilkan nilai sinus dari sebuah bilangan x. Hasilnya adalah bilangan antara -1 sampai dengan 1.',
-            'tan(x)' : ' Fungsi tan(x) digunakan untuk menampilkan nilai tangen dari sebuah bilangan x. Hasilnya adalah bilangan antara -1 sampai dengan 1.',
+            'tan(x)' : ' Fungsi tan(x) digunakan untuk menampilkan nilai tangen dari sebuah bilangan x. Hasilnya adalah bilangan antara -1 sampai dengan 1.',
             'degress(x)' : ' Fungsi ini akan mengkonversi dari radian x menjadi degrees.',
             'radians(x)' : ' Fungsi ini akan mengkonversi dari degrees menjadi radian.'
         }
