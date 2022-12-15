@@ -2,10 +2,13 @@ import math as mt
 
 class Main:
     def start():
+        
         menu = ['acos(x)','asin(x)','atan(x)','atan2(y,x)',
             'cos(x)','hypot(x)','sin(x)','tan(x)',
             'degress(x)','radians(x)'
             ]
+        
+        #MENAMPILKAN DATA MENU
         i = 1
         print("==========Trigonometry Calculator==========\n")
         for data in menu:
@@ -14,6 +17,7 @@ class Main:
         print('0. Help')
         option = eval(input("Pilih : "))
         
+        #KARENA ATAN2 BUTUH 2 ARGUMENT MAKA DIBUAT FUNGSI KHUSUS UNTUK MENGATASINYA
         if menu[option-1] == "atan2(y,x)":
             try:
                 y,x = input("Masukan nilai y,x : ").split(',')
@@ -21,7 +25,9 @@ class Main:
             except:
                 print("Oops! nilai yang dimasukan salah")
                 print("Contoh : 1,2")
+        #MENGHITUNG NILAI TRIGONOMENTRI DENGAN MEMANGGIL DARI CLASS CALC 
         elif option != 0:
+            #MENGAMBIL NILAI DARI USER
             x = eval(input("Masukan nilai x : "))
             
             try :
@@ -54,13 +60,15 @@ class Main:
                     
                 print("\n{} = {}".format(menu[option-1],hasil))
 
-                    
+            #HANDLE JIKA ADA ERROR
             except Exception as error:
                 print("Opps! Nilai yang dimasukan salah")
                 print(error)
         
+        #FITUR HELP UNTUK MENAMPILKAN FUNGSI TRIGONOMENTRI YG AKAN DIGUNAKAN
         elif option == 0 :
             while True:
+                #MENAMPILKAN MENU
                 i = 1
                 print("-------------------HELP-------------------")
                 for data in menu:
@@ -70,12 +78,14 @@ class Main:
                 option = eval(input("Pilih : "))
                 
                 try:
+                    #AMBIL DATA DARI CLASS CALC (DI FUNGSI help)
                     print("\n",Calc.help(menu[option-1]))
                 except:
                     print("Oppss! Pilihan tidak ada")
                 
                 q = input("\nAkhiri sesi ini? (y/n) : ")
                 
+                #PROGRAM BERHENTI JIKA TIDAK ADA LAGI YANG DINGIN DITANYAKAN
                 if q == "y" or q == "Y":
                     break
             
